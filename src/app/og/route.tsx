@@ -10,8 +10,8 @@ export async function GET(req: NextRequest) {
         style={{
             fontSize: 48,
             background: 'white',
-            width: '100',
-            height: '100',
+            width: '100%',
+            height: '100%',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',

@@ -5,7 +5,7 @@ import { getFrameMetadata } from '@coinbase/onchainkit';
 import type { Metadata } from 'next';
 
 
-const FRAMES_URL = 'https://gm-frame-seven.vercel.app/'
+const FRAMES_URL = 'http://localhost:3000'
 const imageUrl = new URL("/og", FRAMES_URL).href
 const postUrl = new URL("/frame", FRAMES_URL).href
 
