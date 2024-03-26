@@ -5,6 +5,8 @@ export const runtime = 'edge';
 
 
 export async function GET(req: NextRequest) {
+    let searchParams = req.nextUrl.searchParams;
+    let userName = searchParams.get("userName");
     return new ImageResponse (
         <div
         style={{
@@ -17,7 +19,7 @@ export async function GET(req: NextRequest) {
             justifyContent: 'center',
         }}
     >
-        Enter Name
+        gm, {userName} !!
         </div>
     );
 }
